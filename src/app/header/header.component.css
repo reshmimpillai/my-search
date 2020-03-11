@@ -1,0 +1,44 @@
+.headerImage{
+  height: 100px;
+  margin-bottom: 20px;
+}
+.glyphicon-search{
+  color: #FF6347;
+}
+
+.navbar{
+  background-color: #003DA1;
+}
+
+.searchIcon{
+  height:20px;
+  position: fixed;
+  top: 267px;
+  left: 370px;
+}
+
+
+.searchLabel{
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.sort{
+  margin-right:50px;
+}
+
+.selectValues{
+  display: inline-block;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: #fff;
+}
+/* .row{
+  margin-left: 20px;
+} */
+
+
+.main-nav{
+  margin-left: 50px;
+}
