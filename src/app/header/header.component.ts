@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent  {
 
   searhcText: string;
+  //random comment
   showNextSearch = false;
 
   serachFromNavBar(searchText: HTMLInputElement) {
