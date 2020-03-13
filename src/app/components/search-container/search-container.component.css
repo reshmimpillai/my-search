@@ -1,0 +1,43 @@
+
+
+/* Bootstrap 3 text input with search icon */
+
+.has-search .form-control-feedback {
+  right: 0;
+  color: #ccc;
+}
+
+.has-search .form-control {
+  padding-right: 12px;
+  padding-left: 34px;
+}
+
+button.form-control-feedback:hover{
+cursor: pointer;
+}
+
+.glyphicon-search{
+  color: #FF6347;
+}
+
+.main {
+  margin-left: 120px;
+  margin-right: 130px;
+  }
+
+.HomeLabel{
+    margin-bottom: 16px;
+  }
+
+  .resultText{
+    font-weight: bold;
+  }
+
+  .searchBox{
+    margin-bottom: 16px;
+  }
+
+
+
+
+

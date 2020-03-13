@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchInputService } from 'src/app/services/search-input.service';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent  {
 
-  searhcText: string;
-  //random comment
+  searhText: string;
   showNextSearch = false;
+  constructor(private searchInputService: SearchInputService) { }
+
 
   serachFromNavBar(searchText: HTMLInputElement) {
-    this.searhcText = searchText.value;
-    if (this.searhcText != null) {
+    this.searhText = searchText.value;
+    if (this.searhText != null) {
       this.showNextSearch =  true;
-      // alert(this.searhcText);
+      this.searchInputService.setSerachText(this.searhText);
+      searchText.value = '';
+
     }
   }
 

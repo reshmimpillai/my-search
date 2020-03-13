@@ -1,6 +1,7 @@
 .headerImage{
   height: 100px;
   margin-bottom: 20px;
+  margin-left:50px;
 }
 .glyphicon-search{
   color: #FF6347;
@@ -40,5 +41,6 @@
 
 
 .main-nav{
-  margin-left: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
