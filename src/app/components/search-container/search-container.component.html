@@ -1,36 +1,51 @@
-
-<div class="container-fluid main">
+<div class="container">
   <div class="row">
     <div class="col-md-3 HomeLabel">
-      <span>Home / <span class="resultText">Search Results</span></span>
+      <span style="color: #253E51;
+        font-size: 12px;">Home /<span style="color: #253E51;
+          font-size: 12px;
+          font-weight: bold;">Search Results</span></span>
     </div>
   </div>
-  <div class="row" *ngIf="searchText">
-    <div class="col-lg-4 searchBox">
+</div>
+<div class="container" style="padding-top:16px;">
+  <div class="row">
+    <div class="col-md-3 HomeLabel">
+      <span style="color: #253E51;
+      font-size: 20px;">Search Results</span>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top:10px;">
+  <div class="row">
+    <div class="col-lg-4">
       <!-- <label class="searchLabel">Serach Results</label>
-      <input type="text" class="form-control" placeholder="Enter" name="search2">
-        <button class="btn searchIcon" type="submit">
-          <i class="glyphicon glyphicon-search searchIcon"></i>
-        </button> -->
-          <div class="input-group">
-            <input type="text" class="form-control"  [(ngModel)]="searchText"  placeholder="Search">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-                  <i class="glyphicon glyphicon-search"></i>
-              </button>
-            </span>
-          </div>
+            <input type="text" class="form-control" placeholder="Enter" name="search2">
+              <button class="btn searchIcon" type="submit">
+                <i class="glyphicon glyphicon-search searchIcon"></i>
+              </button> -->
+      <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-remove" (click)="clearData()"></i>
+          </button>
+          <button class="btn btn-default"type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+           
+        </div>
+         
+      </div>
     </div>
-    <div class="col text-right sort">
-      Sort By
+
+    <div class="col-lg-4 text-right">
+      <label for="sort">Sort By</label>
+      <select id="sort" class="bootstrap-select">
+        <option value="volvo" selected>Most Relevant</option>
+        <option value="saab">By Publish date</option>
+      </select>
     </div>
 
+  </div>
 </div>
-<hr>
-</div>
-
-
-
-
-
-
